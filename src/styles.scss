@@ -1,0 +1,158 @@
+$primary-color: #032830;
+$secondary-color: #0dcaf0;
+// $about-bg: ;
+
+body{
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+    .logo{
+        
+        img{
+            height: 4vw;
+            width: 100%;
+        }
+        @media (max-width: 767px){
+            img{
+                height: 6vw;
+                width: 100%;
+            }
+        }
+    }
+
+    .socials{
+        img{
+            height: 2vw;
+            width: 100%;
+        }
+        @media (max-width: 767px){
+            img{
+                visibility: hidden;
+            }
+        }
+    }
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    .title{
+        font-size: 4vw;
+        font-weight: 700;
+        text-align: center;
+        color: $primary-color;
+        ; 
+        text-shadow: 0 0 3px $secondary-color, 0 0 3px $secondary-color, 0 0 3px $secondary-color;
+        @media (max-width: 767px){
+            font-size: 6vw;
+        }
+    }
+    .sub-title{
+        font-size: 1.15vw;
+        font-weight: 600;
+        text-align: center;
+        @media (max-width: 767px){
+            font-size: 1.75vw;
+        }
+    }
+
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.animated-element {
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-element.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about{
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding-left: 5%;
+    padding-right: 5%;
+    .header{
+        .title{
+            font-size: 3vw;
+            font-weight: 600;
+            text-align: center;
+            color: $primary-color;
+            text-shadow: 0 0 3px $secondary-color, 0 0 3px $secondary-color, 0 0 3px $secondary-color;
+            @media (max-width: 767px){
+                font-size: 4vw;
+            }
+        }
+    }
+    .about-body{
+        .about-desc{
+            padding-right: 15%;
+            h1{
+                font-size: 2.5vw;
+                font-weight: 600;
+                color: $primary-color;
+                text-shadow: 0 0 2px $secondary-color, 0 0 2px $secondary-color, 0 0 2px $secondary-color;
+                b{
+                    font-size: 2.5vw;
+                    font-weight: 600;
+                    color: $secondary-color;
+                    @media (max-width: 767px){
+                        text-align: center;
+                        font-size: 5vw;
+                    }
+                }
+                margin-bottom: 2%;
+                @media (max-width: 767px){
+                    text-align: center;
+                    font-size: 5vw;
+                }
+            }
+            p{
+                font-size: 1.3vw;
+                font-weight: 400;
+                @media (max-width: 767px){
+                    text-align: center;
+                    font-size: 2.5vw;
+                }
+                
+            }
+            @media (max-width: 767px){
+                padding-right: 0;
+                
+            }
+        }
+        img{
+            height: 30vw;
+            width: max-content;
+            @media (max-width: 767px){
+                height: 50vw;
+                
+            }
+        }
+        @media (max-width: 767px){
+            flex-direction: column;
+        }
+    }
+}
