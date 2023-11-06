@@ -1,6 +1,5 @@
 $primary-color: #032830;
 $secondary-color: #0dcaf0;
-// $about-bg: ;
 
 body{
     background-color: $primary-color;
@@ -12,16 +11,19 @@ body{
     width: 100%;
     height: fit-content;
     z-index: 2;
+    padding-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
     .logo{
         
         img{
             height: 4vw;
-            width: 100%;
+            width: auto;
         }
         @media (max-width: 767px){
             img{
-                height: 6vw;
-                width: 100%;
+                height: 7vw;
+                width: auto;
             }
         }
     }
@@ -58,15 +60,15 @@ body{
         ; 
         text-shadow: 0 0 3px $secondary-color, 0 0 3px $secondary-color, 0 0 3px $secondary-color;
         @media (max-width: 767px){
-            font-size: 6vw;
+            font-size: 7vw;
         }
     }
     .sub-title{
-        font-size: 1.15vw;
+        font-size: 1.5vw;
         font-weight: 600;
         text-align: center;
         @media (max-width: 767px){
-            font-size: 1.75vw;
+            font-size: 2vw;
         }
     }
 
@@ -75,7 +77,7 @@ body{
 #particles-js {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 1;
 }
 
@@ -95,6 +97,9 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     .header{
+        @media (max-width: 767px){
+            margin-bottom: 20px;
+        }
         .title{
             font-size: 3vw;
             font-weight: 600;
@@ -102,57 +107,209 @@ body{
             color: $primary-color;
             text-shadow: 0 0 3px $secondary-color, 0 0 3px $secondary-color, 0 0 3px $secondary-color;
             @media (max-width: 767px){
-                font-size: 4vw;
+                font-size: 4.5vw;
+                
             }
         }
     }
     .about-body{
+        width: 100%;
+        height: fit-content;
         .about-desc{
             padding-right: 15%;
-            h1{
-                font-size: 2.5vw;
-                font-weight: 600;
-                color: $primary-color;
-                text-shadow: 0 0 2px $secondary-color, 0 0 2px $secondary-color, 0 0 2px $secondary-color;
-                b{
-                    font-size: 2.5vw;
-                    font-weight: 600;
-                    color: $secondary-color;
-                    @media (max-width: 767px){
-                        text-align: center;
-                        font-size: 5vw;
-                    }
-                }
-                margin-bottom: 2%;
-                @media (max-width: 767px){
-                    text-align: center;
-                    font-size: 5vw;
-                }
-            }
             p{
                 font-size: 1.3vw;
                 font-weight: 400;
+                margin: 0;
                 @media (max-width: 767px){
                     text-align: center;
                     font-size: 2.5vw;
                 }
                 
             }
+            div{
+                margin-top: 5%;
+            }
+            button{
+                height: fit-content;
+                width: fit-content;
+                padding-top: .80vw;
+                padding-bottom: .80vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                font-size:  1.25vw;
+                font-weight: 600;
+                border-radius: 50px; 
+                
+                color: $secondary-color;
+                text-shadow: 0 0 1px $secondary-color, 0 0 1px $secondary-color, 0 0 1px $secondary-color;
+                background: rgba(255, 255, 255, 0.00); 
+                border: 2px solid $primary-color;
+                box-shadow: 0px 0px 3px 0px $secondary-color inset, 0px 0px 3px 0px $secondary-color;
+                @media (max-width: 767px){
+                    padding-top: 1.25vw;
+                    padding-bottom: 1.25vw;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    font-size:  2.25vw;
+                    font-weight: 600;
+                    text-shadow: 0 0 .5px $secondary-color, 0 0 .5px $secondary-color, 0 0 .5px $secondary-color;
+                }
+            }
+            button:hover{
+                cursor: pointer;
+                text-shadow: 0 0 0px $secondary-color, 0 0 0px $secondary-color, 0 0 0px $secondary-color;
+                border: 2px solid $secondary-color;
+                box-shadow: 0px 0px 3px 0px $secondary-color inset, 0px 0px 3px 0px $secondary-color;
+            }
+
             @media (max-width: 767px){
                 padding-right: 0;
                 
             }
         }
-        img{
-            height: 30vw;
-            width: max-content;
+        .mypic-container{
+            height: 32.5vw;
+            img{
+                height: 100%;
+                width: auto;
+                @media (max-width: 767px){
+                    height: 40vw;
+                    
+                }
+            }
+        }
+        
+        @media (max-width: 767px){
+            flex-direction: column;
+        }
+    }
+}
+
+.projects{
+    height: fit-content;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .header{
+        @media (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 3vw;
+            font-weight: 600;
+            text-align: center;
+            color: $primary-color;
+            text-shadow: 0 0 3px $secondary-color, 0 0 3px $secondary-color, 0 0 3px $secondary-color;
             @media (max-width: 767px){
-                height: 50vw;
+                font-size: 4.5vw;
                 
             }
         }
+    }
+
+    #projects-container{
+        height: fit-content;
+        margin-top: 2.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1.5vw;
+        @media (max-width: 1100px){
+            grid-template-columns: 1fr 1fr;
+        }
         @media (max-width: 767px){
+            grid-template-columns: 1fr;
+        }
+
+        .project{
+            height: fit-content;
+            display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            border: 2px solid $secondary-color;
+            padding: 1vw;
+            box-shadow: 0px 0px 3px 0px $secondary-color inset, 0px 0px 3px 0px $secondary-color;
+            border-radius: 30px;
+            @media (max-width: 767px){
+                padding: 3vw;
+            }
+            h2{
+                font-size: 2.5vw;
+                font-weight: 700;
+                margin-bottom: 1vw;
+                @media (max-width: 767px){
+                    font-size: 4vw;
+                }
+            }
+            .tag-container{
+                display: flex;
+                margin-bottom: 1vw;
+                .tag{
+                    font-size: 1vw;
+                    border: 2px solid $secondary-color;
+                    padding-left: .5vw;
+                    padding-right: .5vw;
+                    padding-top: .3vw;
+                    padding-bottom: .3vw;
+                    margin-right: .75vw;
+                    border-radius: 10px;
+                    @media (max-width: 767px){
+                        font-size: 2vw;
+                        border-radius: 7.5px;
+                    }
+                }
+            }
+            a{
+                color: $secondary-color;
+            }
+            p{
+                font-size: 1vw;
+                @media (max-width: 1100px){
+                    font-size: 1.5vw;
+                }
+                @media (max-width: 767px){
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+    .see-more-container{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        button{
+            height: fit-content;
+                width: fit-content;
+                padding-top: .80vw;
+                padding-bottom: .80vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                font-size:  1.25vw;
+                font-weight: 600;
+                border-radius: 50px; 
+                
+                color: $secondary-color;
+                text-shadow: 0 0 1px $secondary-color, 0 0 1px $secondary-color, 0 0 1px $secondary-color;
+                background: rgba(255, 255, 255, 0.00); 
+                border: 2px solid $primary-color;
+                box-shadow: 0px 0px 3px 0px $secondary-color inset, 0px 0px 3px 0px $secondary-color;
+                @media (max-width: 767px){
+                    padding-top: 1.25vw;
+                    padding-bottom: 1.25vw;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    font-size:  2.25vw;
+                    font-weight: 600;
+                    text-shadow: 0 0 .5px $secondary-color, 0 0 .5px $secondary-color, 0 0 .5px $secondary-color;
+                }
+        }
+        button:hover{
+            cursor: pointer;
+            text-shadow: 0 0 0px $secondary-color, 0 0 0px $secondary-color, 0 0 0px $secondary-color;
+            border: 2px solid $secondary-color;
+            box-shadow: 0px 0px 3px 0px $secondary-color inset, 0px 0px 3px 0px $secondary-color;
         }
     }
 }
