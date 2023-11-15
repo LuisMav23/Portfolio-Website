@@ -26,12 +26,13 @@ function loadProjects(){
             tagContainer.appendChild(tag)
         }
         projectDiv.appendChild(tagContainer)
-        let link = document.createElement('p')
-        link.innerHTML += "<a href=\"" + projects[i].link + "\"> <b>Project Link</b> </a>"
-        projectDiv.appendChild(link)
         let description = document.createElement('p')
         description.innerHTML = projects[i].description
         projectDiv.appendChild(description)
+        let visit = document.createElement('div')
+        visit.className += "visit"
+        visit.innerHTML += "<button onclick=\"openLink('"+projects[i].link+"')\"> Visit Project </button>"
+        projectDiv.appendChild(visit)
         container.appendChild(projectDiv)
     }
 }

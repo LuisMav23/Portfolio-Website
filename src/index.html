@@ -14,36 +14,45 @@
     <div class="landing">
       <div id="particles-js">
       </div>
-      <div class="nav d-flex justify-content-between align-items-center">
-        <div class="logo animated-element">
+      <div class="nav">
+        <a class="logo" href="./index.html">
           <img src="assets/Logo.png" alt="logo">
+        </a>
+
+        <div class="sec">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
         </div>
+
         <div class="socials d-flex justify-content-between p-0 m-0">
-          <a href="https://facebook.com/Marebik" class="mx-3">
+          <a href="https://facebook.com/Marebik" class="mx-3 social-logo">
             <img src="assets/facebook.png" alt="facebook">
           </a>
-          <a href="https://instagram.com/Marebik" class="mx-3">
+          <a href="https://instagram.com/Marebik" class="mx-3 social-logo">
             <img src="assets/instagram.png" alt="instagram">
           </a>
-          <a href="https://linkedin.com/in/lmlgabriel/" class="mx-3">
+          <a href="https://linkedin.com/in/lmlgabriel/" class="mx-3 social-logo">
             <img src="assets/linkedin.png" alt="linkedin">
           </a>
-          <a href="https://github.com/LuisMav23" class="mx-3">
+          <a href="https://github.com/LuisMav23" class="mx-3 social-logo">
             <img src="assets/github.png" alt="github">
           </a>
         </div>
       </div>
   
-      <div class="hero d-flex justify-self-center align-self-center pt-4 pb-5 px-5 m-0">
+      <div class="hero">
         <h5 class="sub-title m-0" id="header">Developer | Data Scientist | UI/UX Designer</h5>
         <h1 class="title m-0">
           LUIS MAVERICK</br>GABRIEL
         </h1>
       </div>
     </div>
-    <div class="about">
+
+    
+
+    <div class="about" id="about">
   
-      <div class="header d-flex justify-content-start align-items-center m-0">
+      <div class="header m-0">
         <h1 class="title">
           About Me
         </h1>
@@ -51,13 +60,12 @@
       
       <div class="about-body d-flex justify-content-around align-items-center">
         <div class="about-desc">
-          <!-- <h1 class="text-wrap">Hi I'm <b>Luis</b>👋</h1> -->
           <p class="text-wrap">
             A <b id="age"></b> years-old <b>Software Developer</b> based in Metro Manila. A <b>Computer Engineering</b> Student passionate about <b>Data Science</b> and <b>Machine Learning</b>. I like building cool things and creating solutions. I am also an active leader in numerous tech communities including <b>GDSC PLM</b> and <b>ICpEP.se PLM</b>. </br></br>
             I am experienced in <b>Back-End Software Development</b>, <b>Machine Learning Engineering</b> and <b>Database Management</b>. Although I mostly work in the back-end, I do have experience in <b>Front-End Software Development</b> using React, Angular, Flutter, and QT. In addition, I am also a <b>UI/UX Designer</b>, I have worked in numerous UI/UX design projects in the past.
           </p>
           <div class="d-flex justify-content-around align-items-center">
-            <button onclick="openCalendly()">
+            <button onclick="openLink('https://calendly.com/gabrielluismaverick/30min')">
               Book a meeting
             </button>
             <button onclick="downloadResume()">
@@ -66,25 +74,27 @@
           </div>
         </div>
         <div class="mypic-container">
-          <img src="assets/myPic.png" alt="">
+          <img src="assets/pic.png" alt="">
         </div>
       </div>
     </div>
-    <div class="projects d-flex flex-column justify-content-start">
-      <div class="header d-flex justify-content-start align-items-center m-0">
+    <div class="projects d-flex flex-column justify-content-start" id="projects">
+      <div class="header m-0">
         <h1 class="title">
             Projects
         </h1>
       </div>
       <div id="projects-container"></div>
       <div class="see-more-container d-flex justify-content-center align-items-center">
-        <button onclick="openGithub()">See More</button>
+        <button onclick="openLink('https://github.com/LuisMav23')">See More</button>
       </div>
     </div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/animejs"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="anim.js"></script>
     <script src="projects.js"></script>
     <script src="header.js"></script>
     <script src="particles.js"></script>

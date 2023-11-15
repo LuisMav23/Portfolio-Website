@@ -116,7 +116,7 @@ function responsiveConfig(){
     particlesJS('particles-js', {
       "particles": {
         "number": {
-          "value": 20,
+          "value": 40,
           "density": {
             "enable": false,
             "value_area": 500
